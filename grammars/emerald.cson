@@ -1,0 +1,158 @@
+# TextMate tutorial: http://manual.macromates.com/en/language_grammars
+
+scopeName: 'source.m'
+name: 'Emerald'
+fileTypes: [
+  'm'
+]
+patterns: [
+  # Generated using modes/atom/scripts/all.sh
+  {
+    match: '\\b(?i)(all|and|as|assert)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(at|attached|awaiting|begin)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(builtin|by|checkpoint|class)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(codeof|confirm|const|else)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(elseif|end|enumeration|exit)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(export|external|failure|field)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(fix|for|forall|from)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(function|if|immutable|initially)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(isfixed|islocal|locate|loop)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(monitor|move|nameof|new)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(object|op|operation|or)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(primitive|process|record|recovery)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(refix|restrict|return|returnandfail)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(signal|syntactictypeof|suchthat|then)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(to|typeobject|typeof|unavailable)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(unfix|var|view|visit)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(wait|when|where|while)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(in)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(Any|AOpVecE|AOpVec|AParamL)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Array|AType|Bitchunk|Boolean)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Buffer|Char|Cond|COpVecE)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(COpVec|CType|Decoder|Direct)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(GroupBase|Group|Handler|InStr)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Integer|IState|IVec|IVOfAny)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(IVOfInt|IVOfStr|Literal|Makefile)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(new_Integer|Nil|NLElem|NodeL)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Node|OutStr|RDirect|Real)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(realNode|RISA|RISC|Sequence)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Signat|String|Stub|Time)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Unix|vec-ed|Vec|VOfAny)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(VOfChar|VOfInt|VOfStr|xReal)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(xxxLiteral)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(true|false)\\b'
+    name: 'language.constant'
+  }
+  {
+    begin: '"'
+    patterns: [ { match: '\\\\"' } ]
+    end: '"'
+    name: 'string.quoted'
+  }
+  {
+    begin: '\''
+    patterns: [ { match: '\\\'' } ]
+    end: '\''
+    name: 'constant.character'
+  }
+  {
+    match: '%.*$'
+    name: 'comment'
+  }
+]

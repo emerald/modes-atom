@@ -1,0 +1,15 @@
+{
+  "name": "language-emerald",
+  "main": "./lib/language-emerald",
+  "version": "0.0.0",
+  "description": "A Grammar package for Emerald",
+  "keywords": [
+    "emerald",
+    "distributed programming"
+  ],
+  "repository": "origin",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
