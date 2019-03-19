@@ -1,7 +1,7 @@
 {
   "name": "language-emerald",
   "main": "./lib/language-emerald",
-  "version": "2019.0.0",
+  "version": "2019.0.1",
   "description": "A Grammar package for Emerald",
   "keywords": [
     "emerald",
