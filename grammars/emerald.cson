@@ -1,4 +1,31 @@
-# TextMate tutorial: http://manual.macromates.com/en/language_grammars
+# Copyright (c) 2019 Oleks <oleks@oleks.info>
+# 
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions:
+# 
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+# IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+# CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+# TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+# This file was generated automatically using make:
+# 
+#   Git URL: https://github.com/emerald/syntax-highlighting
+#   Git tag: v2019.0.4 (ahead by 0 commits)
+#   Git commit: 8b7c6c20afc1205d6e8bfa14584bf3755a322604
+# 
+#   Generation date-time (ISO 8601): 2019-03-19T11:38+00:00
 
 scopeName: 'source.m'
 name: 'Emerald'
@@ -6,139 +33,6 @@ fileTypes: [
   'm'
 ]
 patterns: [
-  # Generated using modes/atom/scripts/all.sh
-  {
-    match: '\\b(?i)(all|and|as|assert)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(at|attached|awaiting|begin)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(builtin|by|checkpoint|class)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(codeof|confirm|const|else)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(elseif|end|enumeration|exit)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(export|external|failure|field)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(fix|for|forall|from)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(function|if|immutable|initially)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(isfixed|islocal|locate|loop)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(monitor|move|nameof|new)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(object|op|operation|or)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(primitive|process|record|recovery)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(refix|restrict|return|returnandfail)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(signal|syntactictypeof|suchthat|then)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(to|typeobject|typeof|unavailable)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(unfix|var|view|visit)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(wait|when|where|while)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(in)\\b'
-    name: 'keyword'
-  }
-  {
-    match: '\\b(?i)(Any|AOpVecE|AOpVec|AParamL)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(Array|AType|Bitchunk|Boolean)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(Buffer|Char|Cond|COpVecE)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(COpVec|CType|Decoder|Direct)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(GroupBase|Group|Handler|InStr)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(Integer|IState|IVec|IVOfAny)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(IVOfInt|IVOfStr|Literal|Makefile)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(new_Integer|Nil|NLElem|NodeL)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(Node|OutStr|RDirect|Real)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(realNode|RISA|RISC|Sequence)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(Signat|String|Stub|Time)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(Unix|vec-ed|Vec|VOfAny)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(VOfChar|VOfInt|VOfStr|xReal)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(xxxLiteral)\\b'
-    name: 'entity.name.type'
-  }
-  {
-    match: '\\b(?i)(true|false)\\b'
-    name: 'language.constant'
-  }
   {
     begin: '"'
     patterns: [ { match: '\\\\"' } ]
@@ -154,5 +48,191 @@ patterns: [
   {
     match: '%.*$'
     name: 'comment'
+  }
+
+  # Keywords and built-in types, as found in:
+  # 
+  #   Git URL: https://github.com/emerald/old-emerald
+  #   Git tag: (none)
+  #   Git commit: 8de69f56ed8a7dcec2aacae369d2a20f29dfe960
+
+  # Generated using bin/getkeywords.sh
+  {
+    match: '\\b(?i)(accept|and|as|assert)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(at|attached|awaiting|begin)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(builtin|by|checkpoint|class)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(closure|codeof|const|else)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(elseif|end|enumeration|exit)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(export|external|failure|false)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(field|fix|for|forall)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(from|function|if|immutable)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(in|initially|isfixed|islocal)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(locate|loop|monitor|move)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(nameof|new|nil|object)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(op|operation|or|primitive)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(process|record|recovery|refix)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(restrict|return|returnandfail|self)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(signal|suchthat|syntactictypeof|then)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(to|true|typeobject|typeof)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(unavailable|unfix|var|view)\\b'
+    name: 'keyword'
+  }
+  {
+    match: '\\b(?i)(visit|wait|when|while)\\b'
+    name: 'keyword'
+  }
+
+  # Generated using bin/getbuiltins.sh
+  {
+    match: '\\b(?i)(Any|AOpVector)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(AOpVectorE|AParamList)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Array|Bitchunk)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Boolean|Buffer)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Character|ConcreteType)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Condition|COpVector)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(COpVectorE|Decoder)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Directory|DirectoryGaggle)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(GListener|GManager)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Group|Handler)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(immutableVector|ImmutableVectorOfAny)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(ImmutableVectorOfInt|ImmutableVectorOfString)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(InStream|Integer)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(InterpreterState|LiteralList)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Node|NodeList)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(NodeListElement|None)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(OutStream|RDirectory)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Real|RISA)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(RISC|Sequence)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(SequenceOfAny|SequenceOfCharacter)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Signature|String)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Stub|Time)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(type|Unix)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(Vector|VectorOfAny)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(VectorOfChar|VectorOfInt)\\b'
+    name: 'entity.name.type'
+  }
+  {
+    match: '\\b(?i)(VectorOfString|)\\b'
+    name: 'entity.name.type'
   }
 ]
