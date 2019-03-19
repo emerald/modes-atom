@@ -2,7 +2,7 @@
   "name": "language-emerald",
   "main": "./lib/language-emerald",
   "version": "2019.0.1",
-  "description": "A Grammar package for Emerald",
+  "description": "Syntax-highlighting for Emerald",
   "keywords": [
     "emerald",
     "distributed programming"
